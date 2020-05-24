@@ -1,0 +1,1168 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2 {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.container {
+    background-image: url("assets/images/barbell.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.8;
+    box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+    position: relative;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.2);
+    height: 100px;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    text-transform: uppercase;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.logo {
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+.marked {
+    color: #cb410b;
+}
+
+nav {
+    width: 50%;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    color: #cb410b;
+    transition: 0.3s;
+}
+
+.btn {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #cb410b;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.headline {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.headline-wrapper {
+    width: 100%;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #000;
+    letter-spacing: 3px;
+    padding: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.headline-wrapper h1 {
+    margin: 2rem;
+    font-size: 2.5rem;
+}
+
+.headline-wrapper h6 {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.showcase {
+    width: 80%;
+    min-height: 80vh;
+    margin: 0 auto;
+}
+
+.showcase-headline {
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.showcase-headline h3 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.fas {
+    font-size: 2.5rem;
+    padding: 2rem;
+}
+
+.fa-water {
+    color: #cb410b;
+}
+
+.showcase-headline p {
+    color: #585858;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.box {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 3rem;
+    padding-left: 1rem;
+}
+
+.icon-wrap {
+    background-color: #cb410b;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-wrap .fa-dumbbell {
+    color: #fff;
+    transform: rotate(139deg);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    font-size: 1rem;
+    color: #585858;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.info h3 {
+    color: #000;
+    margin-bottom: 0.5rem;
+}
+
+.info p {
+    color: #585858;
+}
+
+.info span {
+    font-size: 1rem;
+    padding-top: 0.4rem;
+}
+
+.membership {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("assets/images/gym-back.jpg");
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 5rem;
+    position: relative;
+    opacity: 0.9;
+    box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+}
+
+.membership-headline {
+    width: 60%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.membership-headline h2 {
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    text-shadow: 2px 2px #000;
+}
+
+.membership-headline p {
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.trainings {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+.classes {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.details {
+    width: 50%;
+}
+
+.details img {
+    width: 80%;
+    border-radius: 30px;
+}
+
+.class {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin-bottom: 1.5rem;
+    border: 1px solid #dcdcdc;
+    box-shadow: -1px -1px 5px 5px #dcdcdc;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.class .fa-dumbbell {
+    color: #cb410b;
+    transform: rotate(139deg);
+}
+
+.class h3 {
+    font-size: 1.2rem;
+    color: #696969;
+}
+
+#current {
+    color: #cb410b;
+    font-weight: bold;
+}
+
+.current-tab {
+    border: 1px solid #cb410b;
+}
+
+.trainings .classes .current {
+    color: #cb410b;
+    font-weight: bold;
+}
+
+.btn-schedules {
+    width: 70%;
+    border: none;
+    cursor: pointer;
+    background-color: #cb410b;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.details h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0 1rem 0;
+}
+
+.details p {
+    color: #585858;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.table-section {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),
+        url("assets/images/women-having-exercise-using-dumbbells-903171.jpg");
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 5rem;
+    position: relative;
+    opacity: 0.9;
+    box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+}
+
+.table-section {
+    color: #f8f8ff;
+}
+
+.table-section p {
+    color: #fffff0;
+}
+
+.table-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-wrapper h4 {
+    font-size: 1.2rem;
+}
+
+.table-wrapper table {
+    width: 60%;
+    height: 440px;
+    text-align: center;
+    margin: 2rem;
+}
+
+.table-wrapper table,
+th,
+td {
+    border: 1px solid #f5f5f5;
+    border-collapse: collapse;
+    font-size: 1rem;
+}
+
+.trainers-section {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+    padding-bottom: 10rem;
+}
+
+.trainer {
+    width: 29.33333%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 1px solid #dcdcdc;
+    box-shadow: -1px -1px 5px 5px #dcdcdc;
+    border-radius: 10px;
+    padding: 2.5rem;
+    margin-left: 2rem;
+    align-self: stretch;
+}
+
+.trainer img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.trainer h3 {
+    margin: 1rem 0 1rem 0;
+}
+
+.trainer h2 {
+    color: #000;
+    font-size: 1.3rem;
+}
+
+.trainer p {
+    color: #585858;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+}
+
+.social-icons {
+    width: 30%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.footer-section {
+    width: 100%;
+    display: flex;
+}
+
+.map {
+    width: 50%;
+}
+
+iframe {
+    width: 100%;
+}
+
+.form-section {
+    width: 50%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),
+        url("assets/images/man-carrying-barbel-791763.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.form-section form {
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 2rem;
+    border: 1px solid #d3d3d3;
+}
+
+.personal-info {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+textarea {
+    width: 80%;
+    padding: 10px;
+    resize: none;
+    border: 1px solid #d3d3d3;
+}
+
+.personal-info input {
+    width: 48%;
+}
+
+::placeholder {
+    color: #a9a9a9;
+}
+
+.form-section .btn {
+    border: none;
+    cursor: pointer;
+    background-color: #cb410b;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+#tab-1-content,
+#tab-2-content,
+#tab-3-content,
+#tab-4-content {
+    display: none;
+    opacity: 0;
+}
+
+.show {
+    display: block !important;
+    opacity: 1 !important;
+}
+
+.btn-member {
+    background: none;
+    width: 220px;
+    height: 70px;
+    border: 2px solid #000;
+    font-size: 15px;
+    border-radius: 4px;
+    transition: 0.6s;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.4s linear;
+    position: relative;
+    color: #fff;
+}
+
+.btn-member:hover {
+    color: #fff;
+}
+
+.btn-member::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #cb410b;
+    z-index: -1;
+    transition: transform 1s;
+    transform-origin: 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.btn-member::before {
+    transform: scaleX(0);
+}
+
+.btn-member:hover::before {
+    transform: scaleX(1);
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        height: 44vh;
+        background-size: cover;
+        background-attachment: unset;
+        box-shadow: none;
+    }
+
+    header {
+        height: 307px;
+        background: none;
+    }
+
+    .headline-wrapper {
+        display: none;
+    }
+
+    .wrapper {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+        margin-top: 1rem;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav .btn {
+        display: none;
+    }
+
+    nav ul {
+        font-size: 0.7rem;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    nav ul li {
+        padding-bottom: 1rem;
+    }
+
+    .showcase {
+        width: 100%;
+    }
+
+    .showcase-headline {
+        padding: 1rem;
+    }
+
+    .showcase-headline h3 {
+        font-size: 1rem;
+    }
+
+    .fas {
+        font-size: 1.3rem;
+        padding: 1rem;
+    }
+
+    .showcase-headline p {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .boxes {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .icon-wrap {
+        width: 60px;
+        height: 60px;
+    }
+
+    .info h3,
+    p {
+        font-size: 0.8rem;
+    }
+
+    .info span {
+        font-size: 0.8rem;
+    }
+
+    .membership {
+        height: 35vh;
+        margin-top: 2rem;
+    }
+
+    .membership-headline h2 {
+        font-size: 1rem;
+    }
+
+    .membership-headline p {
+        font-size: 0.7rem;
+    }
+
+    .btn {
+        padding: 0.6rem;
+        font-size: 0.6rem;
+    }
+
+    .trainings {
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .classes {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .class {
+        width: 75%;
+        margin-left: 0;
+    }
+
+    .class h3 {
+        font-size: 1rem;
+    }
+
+    .btn-schedules {
+        display: none;
+    }
+
+    .details {
+        width: 80%;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .details img {
+        width: 60%;
+    }
+
+    .details h3 {
+        font-size: 1rem;
+    }
+
+    .details p {
+        font-size: 0.7rem;
+    }
+
+    .table-wrapper {
+        width: 90%;
+        justify-content: unset;
+    }
+
+    .table-section {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .table-wrapper h4 {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .table-wrapper table {
+        width: 100%;
+        height: 300px;
+    }
+
+    .table-wrapper table td,
+    th {
+        font-size: 0.8rem;
+    }
+
+    .trainers-section {
+        width: 90%;
+        flex-direction: column;
+        padding-bottom: 4rem;
+    }
+
+    .trainer {
+        width: 80%;
+        display: block;
+        padding: 1rem;
+        text-align: center;
+        margin: 1.6rem auto;
+    }
+
+    .trainer img {
+        width: 70%;
+    }
+
+    .trainer h2 {
+        font-size: 1rem;
+    }
+
+    #current {
+        font-size: 0.9rem;
+    }
+
+    .trainer p {
+        font-size: 0.8rem;
+    }
+
+    .social-icons {
+        font-size: 0.9rem;
+        margin: 2rem auto;
+    }
+
+    .footer-section {
+        width: 100%;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .form-section {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .form-section form {
+        width: 80%;
+        height: 90%;
+    }
+
+    .personal-info {
+        width: 90%;
+    }
+
+    input {
+        width: 90%;
+        padding: 5px;
+    }
+
+    textarea {
+        width: 90%;
+        padding: 5px;
+    }
+
+    .form-section .btn {
+        padding: 0.8rem;
+    }
+
+    .map {
+        width: 100%;
+        height: 500px;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 800px) {
+    .container {
+        height: 40vh;
+        background-size: cover;
+        background-attachment: unset;
+        box-shadow: none;
+    }
+
+    header {
+        height: 307px;
+        background: none;
+    }
+
+    .headline-wrapper {
+        display: none;
+    }
+
+    .wrapper {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+        margin-top: 1rem;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav .btn {
+        display: none;
+    }
+
+    nav ul {
+        font-size: 0.9rem;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    nav ul li {
+        padding-bottom: 1.5rem;
+    }
+
+    .showcase {
+        width: 100%;
+    }
+
+    .showcase-headline {
+        padding: 1.5rem;
+    }
+
+    .showcase-headline h3 {
+        font-size: 1.3rem;
+    }
+
+    .fas {
+        font-size: 1.3rem;
+        padding: 1rem;
+    }
+
+    .showcase-headline p {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .boxes {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .icon-wrap {
+        width: 60px;
+        height: 60px;
+    }
+
+    .info h3,
+    p {
+        font-size: 0.8rem;
+    }
+
+    .info span {
+        font-size: 0.8rem;
+    }
+
+    .membership {
+        height: 35vh;
+        margin-top: 2rem;
+    }
+
+    .membership-headline h2 {
+        font-size: 1rem;
+    }
+
+    .membership-headline p {
+        font-size: 0.8rem;
+    }
+
+    .btn {
+        padding: 0.5rem;
+        font-size: 0.7rem;
+    }
+
+    .trainings {
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .classes {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .class {
+        width: 60%;
+        margin-left: 0;
+    }
+
+    .class h3 {
+        font-size: 1rem;
+    }
+
+    .btn-schedules {
+        display: none;
+    }
+
+    .details {
+        width: 80%;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .details img {
+        width: 60%;
+    }
+
+    .details h3 {
+        font-size: 1rem;
+    }
+
+    .details p {
+        font-size: 0.7rem;
+    }
+
+    .table-wrapper {
+        width: 95%;
+        justify-content: unset;
+    }
+
+    .table-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .table-wrapper h4 {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .table-wrapper table {
+        width: 100%;
+        height: 400px;
+    }
+
+    .table-wrapper table td,
+    th {
+        font-size: 0.8rem;
+    }
+
+    .trainers-section {
+        width: 90%;
+        flex-direction: column;
+        padding-bottom: 4rem;
+    }
+
+    .trainer {
+        width: 80%;
+        padding: 2rem;
+        display: block;
+        text-align: center;
+        margin: 1.6rem auto;
+    }
+
+    .trainer img {
+        width: 70%;
+    }
+
+    .trainer h2 {
+        font-size: 1rem;
+    }
+
+    #current {
+        font-size: 0.9rem;
+    }
+
+    .trainer p {
+        font-size: 0.8rem;
+    }
+
+    .social-icons {
+        font-size: 0.9rem;
+        margin: 2rem auto;
+    }
+
+    .footer-section {
+        width: 100%;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .form-section {
+        width: 100%;
+        height: 60vh;
+    }
+
+    .form-section form {
+        width: 90%;
+        height: 90%;
+    }
+
+    .personal-info {
+        width: 90%;
+    }
+
+    input {
+        width: 90%;
+        padding: 5px;
+    }
+
+    textarea {
+        width: 90%;
+        padding: 5px;
+    }
+
+    .form-section .btn {
+        padding: 0.8rem;
+    }
+
+    .map {
+        width: 100%;
+        height: 500px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1050px) {
+    .wrapper {
+        width: 95%;
+    }
+    .logo {
+        font-size: 1.5rem;
+    }
+    nav {
+        width: 64%;
+    }
+    .btn-member {
+        width: 200px;
+        height: 60px;
+    }
+
+    .box {
+        width: 100%;
+    }
+    .trainings {
+        width: 100%;
+    }
+    .class {
+        width: 80%;
+    }
+    .class h3 {
+        font-size: 1rem;
+    }
+    .btn-schedules {
+        width: 80%;
+    }
+    .details {
+        text-align: center;
+    }
+    .details img {
+        width: 90%;
+    }
+    .trainers-section {
+        width: 100%;
+    }
+    .trainer {
+        width: 40%;
+        margin-bottom: 2rem;
+    }
+    .footer-section {
+        width: 100%;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .form-section {
+        width: 100%;
+        height: 60vh;
+    }
+
+    .form-section form {
+        width: 60%;
+        height: 60%;
+    }
+
+    .personal-info {
+        width: 90%;
+    }
+
+    input {
+        width: 90%;
+        padding: 5px;
+    }
+
+    textarea {
+        width: 90%;
+        padding: 5px;
+    }
+
+    .form-section .btn {
+        padding: 0.8rem;
+    }
+
+    .map {
+        width: 100%;
+        height: 500px;
+    }
+}
+
+@media screen and (min-width: 1050px) and (max-width: 1100px) {
+    .class {
+        width: 80%;
+    }
+    .btn-schedules {
+        width: 80%;
+    }
+    .trainer {
+        width: 41%;
+        margin: 2rem;
+    }
+}
